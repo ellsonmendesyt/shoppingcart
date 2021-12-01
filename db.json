@@ -1,0 +1,58 @@
+{
+   "data":{
+   
+   "fixo":[
+    {
+      "id":1,
+      "categoria":"telefone",
+       "plano":"Ilimitado Fixo brasil",
+       "franquia":"ilimitado",
+       "preco":39.99,
+       "detalhes":"Fale Ilimitado para todo Brasil"
+    }],
+
+    "internet":[
+     {
+         "id":1,
+         "plano":"Internet 100MB",
+         "categoria":"internet",
+         "franquia":"100MB",
+         "preco":39.90,
+         "detalhes":"Ideal para redes sociais e estudos"
+     },
+     {
+         "id":2,
+         "plano":"Internet 200MB",
+         "categoria":"internet",
+         "franquia":"200MB",
+         "preco":59.90,
+         "detalhes":"Ideal pra quem gosta de ver videos"
+     },
+     {
+         "id":3,
+         "plano":"Internet 300MB",
+         "categoria":"internet",
+         "franquia":"300MB",
+         "preco":69.90,
+         "detalhes":"Ideal pra quem gosta de jogar online, ver videos e falar a vontade nas redes sociais"
+     }
+    ],
+    "tv":[
+        {
+            "id":1,
+            "categoria":"tv",
+            "plano":"FULL HD",
+            "preco":99.99,
+            "detalhes":"Assista todos os seu filmes e series em alta resolução"
+        },
+        {
+            "id":2,
+            "categoria":"tv",
+            "plano":"ULTIMATE HD",
+            "preco":99.99,
+            "detalhes":"Pra quem quer tudo que a alta definição pode proporcionar ou projetar em uma tela com mais de 90 polegadas"
+        }
+    ]
+}
+   
+}
