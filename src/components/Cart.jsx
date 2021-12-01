@@ -6,12 +6,12 @@ import styled from 'styled-components';
 
 const Cart = () => {
 
-    // const dispatch = useDispatchCart();
+    const dispatch = useDispatchCart();
     
-    // const handleRemove = (item)=>{
-    //     dispatch({type:"REMOVE", item});
+    const clearCart= ()=>{
+        dispatch({type:"CLEAR"});
         
-    // }
+    }
 
     const items = useCart();
     const total = items.reduce((a,b)=>a+b.preco,0);
@@ -34,6 +34,7 @@ const Cart = () => {
                 currency:"BRL"
             })} </Title>
 
+             <ClearBtn onClick={()=> clearCart()}>Limpar Carrinho</ClearBtn>
             <PayBtn>Confimar Pagamento</PayBtn>
            </Payment>
         </Container>
@@ -76,19 +77,31 @@ background-color: #660099;
 border: none;
 border-radius: 8px;
 color: #fff;
-padding: .7rem 1rem;
+padding: .4rem .8rem;
 transition: all .4s ease-in;
 font-size: 1rem;
+margin:.3rem;
 
 &:hover{
     background-color: #aa037b;
+}
+
+@media (min-width:800px){
+    padding: .8rem 1rem;
+    margin:.3rem;
 }
 `
 const Title = styled.h3`
  font-weight: 600;
  color: #666;
 `
-
+const ClearBtn = styled(PayBtn)`
+ background-color: #666;
+ &:hover{
+     background-color:darkslategray;
+     
+ }
+`
 
 
 export default Cart

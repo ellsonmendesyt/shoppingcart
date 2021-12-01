@@ -30,7 +30,7 @@ const reducer = (state,action)=>{
                 
                 }
             }
-        case "EMPTY":
+        case "CLEAR":
             return []
 
         case "REMOVE":

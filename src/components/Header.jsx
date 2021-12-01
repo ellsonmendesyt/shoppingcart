@@ -9,15 +9,21 @@ const Header = () => {
     return (
         <HeaderWrapper>
            
-            <Link to='/'>Store</Link>
-            <Link to='/cart'>Cart</Link>
-            <p>{items.length}</p>
+            <Link to='/'><i class="fa fa-home fa-2x" aria-hidden="true"></i></Link>
+            <CartIcon title='Ir par o carrinho' to='/cart'><i class="fa fa-shopping-basket" aria-hidden="true"> <Count>{items.length}</Count> </i></CartIcon>
+            
             
         </HeaderWrapper>
     )
 }
 
 const HeaderWrapper = styled.header`
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+height: 3rem;
+
 background-color: #660099;
 color: #fff;
 position: sticky;
@@ -28,6 +34,22 @@ z-index:99;
     color: #fff;
     text-decoration: none;
 }
+`
+const CartIcon= styled(Link)`
+position: relative;
+/* background-color: orange; */
+cursor: pointer;
+& .fa{
+    font-size: 1.3rem;
+}
+`
+
+
+const Count = styled.div`
+position: absolute;
+right: -5px;
+top: -12px;
+font-size: .9rem;
 `
 
 export default Header
