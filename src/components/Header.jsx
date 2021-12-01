@@ -23,6 +23,7 @@ color: #fff;
 position: sticky;
 top: 0px;
 padding: 0 5%;
+z-index:99;
 & a{
     color: #fff;
     text-decoration: none;
