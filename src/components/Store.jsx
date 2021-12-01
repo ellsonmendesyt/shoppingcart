@@ -10,6 +10,11 @@ const Store = ({items}) => {
                 ))
             }
             {
+                items && items.internet.map(item => (
+                   <Card key={item.id} item={item} />
+                ))
+            }
+            {
                 items && items.tv.map(item => (
                    <Card key={item.id} item={item} />
                 ))

@@ -6,9 +6,9 @@ const Cart = () => {
 
     const dispatch = useDispatchCart();
 
-    const handleRemove = (index)=>{
+    const handleRemove = (item)=>{
     
-        dispatch({type:"REMOVE", index});
+        dispatch({type:"REMOVE", item});
         
     }
 
@@ -29,15 +29,7 @@ const Cart = () => {
                 currency:"BRL"
             })} </p>
 
-            {/* <p>
-            
-            {
-                total.toLocaleString("pt-BR",{
-                    style:"currency",
-                    currency:"BRL"
-                })
-            }
-            </p> */}
+       
 
             {
                 items.map(item =>(
