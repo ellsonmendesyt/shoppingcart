@@ -1,70 +1,44 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 style="text-align:center"> CARRINHO DE COMPRAS </h1>
 
-## Available Scripts
 
-In the project directory, you can run:
+<img src="./preview.gif">
 
-### `yarn start`
+<p style="font-size:20px; font-weight:bold;margin-top:20px">O projeto representa uma vitrine de uma loja virtual<p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p style="font-size:20px">Produtos</p>
+<ul> 
+<li>TV</li>
+<li>Internet</li>
+<li>Fixo</li>
+</ul>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p> Para que o usuario possa comprar um pacote de  <strong>TV</strong> ou <strong>Internet</strong> primeiro ele precisa adquirir o plano de <strong>Telefone Fixo</strong> .</p>
 
-### `yarn test`
+<h2>Regras:</h2>
+<p> Para comprar um produto clique no botão de <strong>COMPRAR</strong>. Se clicar em comrar a <strong>TV</strong> ou <strong>Internet</strong> sem adquirir o<strong> Fixo</strong> o sistema vai recusar e não adicionará ao <strong> Carrinho de compras.</strong></p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h2> Anti-fraude</h2>
+<p> Ao adiconar os itens ao carrinho e remover o <strong>Fixo</strong> o sistema excluirá todos os <strong> Produtos</strong> do carrinho.</p>
+<p>Vou te empurrar esse <strong>Fixo</strong> de qualquer jeito!! </p>
 
-### `yarn build`
+<h3 style="margin-top:30px">COMO RODAR O PROJETO</h3>
+<ul> 
+<li>clone ou baixe o projeto</li>
+<li>Abra o projeto com o editor de sua preferencia</li>
+<li>Execute o comando:
+  <ul> 
+   <li> Yarn: yarn install </li>
+   <li> Npm: npn install </li>
+  </ul>
+</li>
+<li>Após instaladas das dependendica rode:
+<ul> 
+   <li> Yarn: yarn start </li>
+   <li> Npm: npn start </li>
+  </ul>
+</li>
+<li>Parabéns Você concluiu com sucesso!</li>
+</ul>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<strong> </strong>
