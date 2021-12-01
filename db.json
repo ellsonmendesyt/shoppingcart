@@ -35,18 +35,26 @@
          "franquia":"300MB",
          "preco":69.90,
          "detalhes":"Ideal pra quem gosta de jogar online, ver videos e falar a vontade nas redes sociais"
+     },
+     {
+         "id":5,
+         "plano":"Internet 400MB",
+         "categoria":"internet",
+         "franquia":"400MB",
+         "preco":79.90,
+         "detalhes":"Ideal para quem é navegador hard core, o nerd da cidade"
      }
     ],
     "tv":[
         {
-            "id":5,
+            "id":6,
             "categoria":"tv",
             "plano":"FULL HD",
             "preco":99.99,
             "detalhes":"Assista todos os seu filmes e series em alta resolução"
         },
         {
-            "id":6,
+            "id":7,
             "categoria":"tv",
             "plano":"ULTIMATE HD",
             "preco":199.99,

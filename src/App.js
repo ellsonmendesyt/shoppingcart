@@ -7,6 +7,7 @@ import { Routes,Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Cart from './components/Cart';
 
+import GlobalStyle from './components/Globalstyle';
 
 function App() {
   const items = useCart();
@@ -44,6 +45,7 @@ function App() {
   return (
     <>
      <BrowserRouter>
+     <GlobalStyle/>
      <Header />
      <Routes>
        <Route path='/' element={ <Store items={products} />} />

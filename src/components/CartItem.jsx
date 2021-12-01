@@ -3,11 +3,6 @@ import React from 'react'
 
 
 const CartItem = ({item,handleRemove}) => {
-
-
-
-
-
     return (
         <div>
             <p>{item.plano}</p>

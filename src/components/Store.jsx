@@ -1,25 +1,23 @@
 import React from 'react'
 import Card from './Card'
+import Layout from './Layout'
+import List from './List'
 
 const Store = ({items}) => {
     return (
-        <div>
-            {
-                items && items.fixo.map(item => (
-                   <Card key={item.id} item={item} />
-                ))
+        <>
+            {items &&
+             <>
+               <h2>Escolha </h2>
+                <List items={items.internet} />
+                <List items={items.tv} />
+                <List items={items.fixo} />
+             </>
             }
-            {
-                items && items.internet.map(item => (
-                   <Card key={item.id} item={item} />
-                ))
-            }
-            {
-                items && items.tv.map(item => (
-                   <Card key={item.id} item={item} />
-                ))
-            }
-        </div>
+            
+            
+        
+        </>
     )
 }
 
