@@ -13,31 +13,43 @@ const Card = ({item}) => {
         // console.log(item);
     }
     return (
-        <Container >
-        <h2>{item.plano} </h2>
-          <p>{item.detalhes}</p>
-          <p>R$ {item.preco}</p>
+        <CardWrapper >
+        <CardTop>
+            <CardTitle>{item.plano}</CardTitle>
+        </CardTop>
 
-           <Button onClick={()=>addToCart(item)}>ADD</Button>
-        </Container>
+        <CardMiddle>
+          <CardText>{item.detalhes}</CardText>
+          <CardTitle>R$ {item.preco}</CardTitle>
+        </CardMiddle>
+        
+
+          <CardBottom>
+           <Button onClick={()=>addToCart(item)}>Comprar</Button>
+          </CardBottom>
+        </CardWrapper>
     )
 }
 
 
-const Container = styled.div`
+const CardWrapper = styled.div`
 
-max-width: 250px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+max-width: 200px;
 width: 100%;
-border: 1px solid #212525;
+border: 1px solid lightgray;
 border-radius: 9px;
-/* background-color: orange; */
-padding: .7rem;
 
-@media (min-width:550px){
-    justify-content: flex-start;
-    margin: .3rem;
+padding: .4rem 1rem;
+margin: .5rem;
+transition: .3s ease-in-out;
+
+&:hover{
+    
+box-shadow: 1px 1px 8px 0px #000000;
 }
-
 `
 
 const Button = styled.button`
@@ -45,13 +57,40 @@ const Button = styled.button`
  border: none;
  padding: .5rem 1rem;
  border-radius: 8px;
- transition: all.4s ease-in;
-
+ transition: all.3s ease-in;
+ width: 100%;
+ color: #fff;
+ font-weight: 600;
+ margin: .5rem auto;
  &:hover{
     background-color: #d14bcd;
  }
 `
+const CardMiddle = styled.div`
+font-size: .9rem;
 
+`
+const CardTop = styled.div`
+
+`
+const CardBottom = styled.div`
+ 
+ 
+`
+const CardText = styled.p`
+ font-size: .9rem;
+ font-weight: 400;
+ 
+`
+
+
+
+const CardTitle = styled.h3`
+ font-weight: 600;
+ color: #666;
+ font-family: 'Roboto', sans-serif;
+ margin-bottom: 0;
+`
 
 
 
